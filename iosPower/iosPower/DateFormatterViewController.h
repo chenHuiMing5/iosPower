@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DateFormatterViewController.h
 //  iosPower
 //
 //  Created by ngmmxh on 2018/10/22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DateFormatterViewController : UIViewController
 
 @end
-

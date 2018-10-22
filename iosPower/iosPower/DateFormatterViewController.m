@@ -1,24 +1,23 @@
 //
-//  ViewController.m
-//  NGImageViewAndVideoBanner
+//  DateFormatterViewController.m
+//  iosPower
 //
-//  Created by ngmmxh on 2018/10/19.
+//  Created by ngmmxh on 2018/10/22.
 //  Copyright © 2018年 ngmmxh. All rights reserved.
 //
 
-#import "ViewController.h"
-
+#import "DateFormatterViewController.h"
 #define ITERATIONS (1024*10)
 
 static double then, now;
 
-@interface ViewController ()
+@interface DateFormatterViewController ()
 @property (nonatomic, strong) NSTimeZone *timeZone;
 @property (nonatomic, strong) NSString *dateAsString;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 @end
 
-@implementation ViewController
+@implementation DateFormatterViewController
 
 - (NSTimeZone *)timeZone
 {
@@ -40,6 +39,7 @@ static double then, now;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self convertDateToStringUsingNewDateFormatter];
     
